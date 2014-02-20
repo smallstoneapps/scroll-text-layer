@@ -47,6 +47,8 @@ Set the text for the ScrollTextLayer.
 
     void scroll_text_layer_set_text(ScrollTextLayer* layer, char* text);
 
+### Utility Functions
+
 Create a new ScrollTextLayer that is the size of a window.
 
     ScrollTextLayer* scroll_text_layer_create_fullscreen(window) scroll_text_layer_create(layer_get_bounds(window_get_root_layer(window)));
