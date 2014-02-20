@@ -1,3 +1,9 @@
+/***
+ * Scroll Text Layer
+ * Copyright © 2013-2014 Matthew Tole
+ * MIT License
+ ***/
+
 #include <pebble.h>
 
 struct ScrollTextLayer;

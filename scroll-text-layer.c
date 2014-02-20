@@ -1,3 +1,9 @@
+/***
+ * Scroll Text Layer
+ * Copyright © 2013-2014 Matthew Tole
+ * MIT License
+ ***/
+
 #include <pebble.h>
 #include "scroll-text-layer.h"
 
@@ -20,17 +26,26 @@ ScrollTextLayer* scroll_text_layer_create(GRect rect) {
 }
 
 void scroll_text_layer_destroy(ScrollTextLayer* layer) {
+  if (layer == NULL) {
+    return;
+  }
   text_layer_destroy(scroll_text_layer_get_text_layer(layer));
   scroll_layer_destroy(scroll_text_layer_get_scroll_layer(layer));
   free(layer);
 }
 
 void scroll_text_layer_add_to_window(ScrollTextLayer* layer, Window* window) {
+  if (layer == NULL || window == NULL) {
+    return;
+  }
   scroll_layer_set_click_config_onto_window(layer->scroll_layer, window);
   layer_add_child(window_get_root_layer(window), scroll_layer_get_layer(layer->scroll_layer));
 }
 
 void scroll_text_layer_set_text(ScrollTextLayer* layer, char* text) {
+  if (layer == NULL) {
+    return;
+  }
   text_layer_set_text(layer->text_layer, text);
   GSize max_size = text_layer_get_content_size(layer->text_layer);
   text_layer_set_size(layer->text_layer, max_size);
@@ -39,9 +54,15 @@ void scroll_text_layer_set_text(ScrollTextLayer* layer, char* text) {
 }
 
 TextLayer* scroll_text_layer_get_text_layer(ScrollTextLayer* layer) {
+  if (layer == NULL) {
+    return NULL;
+  }
   return layer->text_layer;
 }
 
 ScrollLayer* scroll_text_layer_get_scroll_layer(ScrollTextLayer* layer) {
+  if (layer == NULL) {
+    return NULL;
+  }
   return layer->scroll_layer;
 }
