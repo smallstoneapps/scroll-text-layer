@@ -2,13 +2,15 @@
 
 Pebble library for easily adding a scrollable text layer to your app.
 
+![Screenshot of library in action](info/animation.gif)
+
 ## Usage
 
 ````c
 // This is not a complete example, but should demonstrate the basic usage of a ScrollTextLayer.
 
 static ScrollTextLayer* scroll_text;
-static char* long_text = 'Bacon ipsum dolor sit amet ribeye brisket leberkas, frankfurter pork loin salami biltong. \nPig spare ribs drumstick filet mignon tongue, rump pork belly andouille ball tip shoulder chuck sausage. Beef rump pig hamburger ham hock. Hamburger landjaeger cow, frankfurter drumstick ball tip pork swine tongue shoulder prosciutto t-bone flank chicken. \nTri-tip shoulder tongue pork belly, beef ribs pancetta flank tenderloin. Capicola hamburger t-bone ground round spare ribs rump, brisket tongue flank ball tip short ribs. Beef pork chop flank pork belly pig chuck.';
+static char* long_text = "Bacon ipsum dolor sit amet ribeye brisket leberkas, frankfurter pork loin salami biltong. \nPig spare ribs drumstick filet mignon tongue, rump pork belly andouille ball tip shoulder chuck sausage. Beef rump pig hamburger ham hock. Hamburger landjaeger cow, frankfurter drumstick ball tip pork swine tongue shoulder prosciutto t-bone flank chicken. \nTri-tip shoulder tongue pork belly, beef ribs pancetta flank tenderloin. Capicola hamburger t-bone ground round spare ribs rump, brisket tongue flank ball tip short ribs. Beef pork chop flank pork belly pig chuck.";
 
 static void window_load(Window* window) {
   scroll_text = scroll_text_layer_create_fullscreen(window);

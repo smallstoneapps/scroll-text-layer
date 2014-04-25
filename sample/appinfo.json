@@ -1,0 +1,13 @@
+{
+  "uuid": "63ed103f-f118-48bb-9039-28c272685bd7",
+  "shortName": "Scroll Text Layer Sample",
+  "longName": "Scroll Text Layer Sample",
+  "companyName": "Matthew Tole",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": { "watchface": false },
+  "appKeys": { },
+  "resources": {
+    "media": []
+  }
+}
