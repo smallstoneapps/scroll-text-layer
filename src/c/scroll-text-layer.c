@@ -96,7 +96,7 @@ ScrollLayer* scroll_text_layer_get_scroll_layer(ScrollTextLayer* layer) {
   return layer->scroll_layer;
 }
 
-void scroll_text_layer_set_font(ScrollTextLayer* layer, GFont* font) {
+void scroll_text_layer_set_font(ScrollTextLayer* layer, GFont font) {
   text_layer_set_font(scroll_text_layer_get_text_layer(layer), font);
   scroll_text_layer_update(layer);
 }
