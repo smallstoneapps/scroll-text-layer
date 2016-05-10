@@ -3,8 +3,8 @@
   "shortName": "Scroll Text Layer Sample",
   "longName": "Scroll Text Layer Sample",
   "companyName": "Matthew Tole",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
   "watchapp": { "watchface": false },
   "appKeys": { },
   "resources": {
