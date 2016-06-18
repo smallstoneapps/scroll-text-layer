@@ -1,10 +1,9 @@
 {
   "name": "@smallstoneapps/scroll-text-layer",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Pebble library for easily adding a scrollable text layer to your app.",
   "main": "src/c/scroll-text-layer.c",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smallstoneapps/scroll-text-layer.git"
@@ -18,9 +17,17 @@
   "pebble": {
     "projectType": "package",
     "sdkVersion": "3",
-    "targetPlatforms": ["aplite", "basalt", "chalk"]
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ]
   },
   "files": [
     "dist.zip"
+  ],
+  "keywords": [
+    "pebble-package"
   ]
 }
