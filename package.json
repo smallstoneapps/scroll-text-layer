@@ -1,6 +1,6 @@
 {
   "name": "@smallstoneapps/scroll-text-layer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Pebble library for easily adding a scrollable text layer to your app.",
   "main": "src/c/scroll-text-layer.c",
   "scripts": {},

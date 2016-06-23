@@ -46,6 +46,7 @@ void scroll_text_layer_set_text(ScrollTextLayer* layer, char* text) {
   if (NULL == layer) {
     return;
   }
+  text_layer_set_size(layer->text_layer, GSize(layer_get_bounds(scroll_layer_get_layer(layer->scroll_layer)).size.w - (PADDING_X * 2), MAX_HEIGHT));
   text_layer_set_text(layer->text_layer, text);
   scroll_text_layer_update(layer);
 }
