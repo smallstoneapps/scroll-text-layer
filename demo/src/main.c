@@ -1,5 +1,5 @@
 #include <pebble.h>
-#include "../../include/scroll-text-layer.h"
+#include <@smallstoneapps/scroll-text-layer/scroll-text-layer.h>
 
 static void init(void);
 static void deinit(void);

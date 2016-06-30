@@ -1,8 +1,18 @@
-# ScrollTextLayer
+# Scroll Text Layer [![npm (scoped)](https://img.shields.io/npm/v/@smallstoneapps/scroll-text-layer.svg?maxAge=2592000&style=flat-square)](https://www.npmjs.com/package/@smallstoneapps/scroll-text-layer)&nbsp;[![MIT License](http://img.shields.io/badge/license-MIT-lightgray.svg?style=flat-square)](./LICENSE)
 
 Pebble library for easily adding a scrollable text layer to your app.
 
 ![Screenshot of library in action](info/animation.gif)
+
+## Installation
+
+*You must be using Pebble SDK 3.12 or newer to use this library.*
+
+To install the package to your app, use the pebble tool:
+
+```
+pebble package install @smallstoneapps/bitmap-loader
+```
 
 ## Usage
 
